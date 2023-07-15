@@ -5,21 +5,54 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
 <meta name="referrer" content="same-origin">
-  <title>LSBTV - LIGA DAGELAN BAGIAN 1</title>
- <link rel="stylesheet" href="https://arjunaaaaa.github.io/lsbtv/gaya.css" />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bubblegum+Sans">
+  <title>LSBTV - STREAMING GRATIS, GRATIS STREAMING </title>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Arjunaaaaa/lsbtv/gaya.css" />
 <script src='https://cdn.jsdelivr.net/gh/Arjunaaaaa/lsbtv/fullscreen.js' crossorigin='anonymous'></script>
 <script src='https://cdn.jsdelivr.net/gh/Arjunaaaaa/lsbtv/aspekrasio.js' crossorigin='anonymous'></script>
 <script src='https://cdn.jsdelivr.net/gh/Arjunaaaaa/lsbtv/popupwindow.js' crossorigin='anonymous'></script>
 <script src='https://cdn.jsdelivr.net/gh/Arjunaaaaa/lsbtv/aspekrasio.js' crossorigin='anonymous'>
-<script type="text/javascript" src='https://reisyah.github.io/ngopy/function.js'></script>
-<script type="text/javascript" src='https://arjunaaaaa.github.io/nyuri/script/offline-message.js'>
-
  </script>
- 
- <style>
+  <style>
+  .konten-atas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.konten-bawah {
+  position: relative;
+}
+
+  .vidio {
+        margin-top: 0px; /* Ubah angka ini sesuai dengan jarak yang diinginkan */
+    }
+            #offline-message {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #f1f1f1;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .container {
+  position: relative;
+}
+
+.overlay {
+  position: relative;
+  top: 0;
+display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
+.iframe {
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
     </style>
     <script>
         window.addEventListener('load', function() {
@@ -48,194 +81,41 @@
     
 </head>
 <body bgcolor='black' style='margin:0' oncontextmenu='return false' onkeydown='return false' onmousedown='return false'>
+<div class="konten-bawah">
+  <!-- Konten di bawah -->
 
 
-<iframe class="iframe-tv" id="vidio" width="100%" height="250px" src="https://sbolongo.xyz/ice/inews.html" title="Lsbt" scrolling="no" sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
- <div class="Marquee-box">
-   <marquee class="MyMarquee" id="my_marquee" direction="left" behavior="1" scrollamount="6" onmouseover="this.stop()" onmouseout="this.start()">
-     <div> KALAU NYALEG EH NGELEG PILIH CHANNEL YA!| PILIH RESOLUSI PADA TITIK TIGA DIPOJOK KANAN BAWAH | DAN PILIH RESOLUSI PADA MENU YANG DISEDIAAIN DIBAWAH | ATAU PILIH RESOLUSI CHANNEL *NS) RESOLUSI NAMUN SEBELUM ITU ANDA HARUS MENGINSTAL APLIKASI NS PLAYER SEBAGAI PEMUTAR CHNNELNYA, KALAU MALES INSTAL APK YA PILIH AJA TUH SERVER YANG DISEDIAKAN ! ANDA TUH DAH GEDE, MASA MAU DIAJARIN TERUS SIH</div>
-   </marquee>
- </div>
- 
+<iframe class="vidio" id="vidio" width="100%" height="100%" margin src="https://api.allorigins.win/raw?url=https://reisyah.github.io/tvsport/sportstar.html" title="Lsbt" sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
   <div id="offline-message">
-    <h2>OM MAU NGAPAIN OM?</h2>
+    <h2>OM MAU NGAPAIN OM?🤣</h2>
     <p>Harap periksa koneksi internet Anda dan coba lagi. Lain Kali Jangan Gitu Ya! Dosa Tau Nyuri Mulu, Langsung Ke Sumbernya Lah Masa Mau Nyuri Disini🗿</p>
   </div>
 	
+  <script>
+    var iframe = document.getElementById('vidio');
+    var offlineMessage = document.getElementById('offline-message');
 
-		<fieldset class="css-btn-border">
-		  
-  <legend class="css-btn-jdl" >KALAU NGELEG PILIH CHANNEL LAIN</legend>
- <center>
-   
-     <button type="button" class="css-button" onclick="refreshPage()">
-	<span class="css-button-icon">
-		<i class="fa fa-refresh"></i>
-	</span>
-	<span class="css-button-text">
-		<span>REFRESH</span>
-	</span>
-</button>
-<button type="button" class="css-button" onclick="soccerch2 ()">
-	<span class="css-button-icon">
-		<i class="fa fa-television"></i>
-	</span>
-	<span class="css-button-text">
-		<span>SOCCER CH</span>
-	</span>
-</button>
-<button type="button" class="css-button" onclick="inewsvp ()">
-	<span class="css-button-icon">
-		<i class="fa fa-television"></i>
-	</span>
-	<span class="css-button-text">
-		<span>INEWS V+</span>
-	</span>
-</button>
+    iframe.addEventListener('load', function() {
+      // Fungsi ini akan dipanggil saat iframe selesai dimuat
 
-<button type="button" class="css-button" onclick="goinewsvp ()">
-	<span class="css-button-icon">
-		<i class="fa fa-television"></i>
-	</span>
-	<span class="css-button-text">
-		<span>²INEWS V+</span>
-	</span>
-</button>
+      // Periksa status koneksi internet
+      var online = navigator.onLine;
 
-	 <!--
+      if (!online) {
+        // Tampilkan pesan jika tidak terhubung
+        offlineMessage.style.display = 'block';
+        iframe.style.display = 'none';
+      }
+    });
 
-<button type="button" class="css-button" onclick="ss31 ()">
-	<span class="css-button-icon">
-		<i class="fa fa-television"></i>
-	</span>
-	<span class="css-button-text">
-		<span>SPORTSTARS3 SD </span>
-	</span>
-</button>
+    // Periksa status koneksi saat memuat halaman
+    var online = navigator.onLine;
 
-<button type="button" class="css-button" onclick="ss32 ()">
-	<span class="css-button-icon">
-		<i class="fa fa-television"></i>
-	</span>
-	<span class="css-button-text">
-		<span>SPORTSTARS3² SD</span>
-	</span>
-</button>
-<button type="button" class="css-button" onclick="ss3hd ()">
-	<span class="css-button-icon">
-		<i class="fa fa-television"></i>
-	</span>
-	<span class="css-button-text">
-		<span>SPORTSTARS3 HD</span>
-	</span>
-</button>
-	 
-<button type="button" class="css-button" onclick="ss33 ()">
-	<span class="css-button-icon">
-		<i class="fa fa-television"></i>
-	</span>
-	<span class="css-button-text">
-		<span>SPORTSTARS3³ SD</span>
-	</span>
-</button>
-	 
-
-
-
-	 
--->
-
-     <button type="button" class="css-button" onclick="rplusfhd ()">
-	<span class="css-button-icon">
-		<i class="fa fa-television"></i>
-	</span>
-	<span class="css-button-text">
-		<span>RCTI+ CH FHD</span>
-	</span>
-</button>
-
-        <button type="button" class="css-button" onclick="rplushd ()">
-	<span class="css-button-icon">
-		<i class="fa fa-television"></i>
-	</span>
-	<span class="css-button-text">
-		<span>RCTI+ CH HD</span>
-	</span>
-</button>
-
-
-         <button type="button" class="css-button" onclick="rplussd ()">
-	<span class="css-button-icon">
-		<i class="fa fa-television"></i>
-	</span>
-	<span class="css-button-text">
-		<span>RCTI+ CH SD</span>
-	</span>
-</button>
-        <button type="button" class="css-button" onclick="rpluslow ()">
-	<span class="css-button-icon">
-		<i class="fa fa-television"></i>
-	</span>
-	<span class="css-button-text">
-		<span>RCTI+ CH LOW</span>
-	</span>
-</button>
-<!--
-
-
-<button type="button" class="css-button" onclick="cak2 ()">
-		<span class="css-button-icon">
-		<i class="fa fa-television"></i>
-	</span>
-	<span class="css-button-text">
-		<span>INDO 1 HD</span>
-	</span>
-</button>
-	 
-      <button type="button" class="css-button" onclick="livesport1 ()">
-		<span class="css-button-icon">
-		<i class="fa fa-television"></i>
-	</span>
-	<span class="css-button-text">
-		<span>INDO 2 SD</span>
-	</span>
-	
-
-	
-	<button type="button" class="css-button" onclick="rbtv1 ()">
-		<span class="css-button-icon">
-		<i class="fa fa-television"></i>
-	</span>
-	<span class="css-button-text">
-		<span>INDO 3 HD</span>
-	</span>
-	</button>
-	
-	<button type="button" class="css-button" onclick="kzb71 ()">
-		<span class="css-button-icon">
-		<i class="fa fa-television"></i>
-	</span>
-	<span class="css-button-text">
-		<span>INDO 4 HD</span>
-	</span>
-	</button>
-	-->
-	
-		<button type="button" class="css-button" onclick="nschinewsr ()">
-		<span class="css-button-icon">
-		<i class="fa fa-television"></i>
-	</span>
-	<span class="css-button-text">
-		<span>*NS) RESOLUSI</span>
-	</span>      
-</button>
-       
-      </button>
-</center>
-</fieldset>
-<iframe class="iframe-chat" width="100%" height="350vh" src="https://www3.cbox.ws/box/?boxid=3522158&boxtag=bcdAEd" title="Lsbt" frameborder="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<script type="text/javascript" src='https://reisyah.github.io/ngopy/function.js'></script>
-<script type="text/javascript" src='https://arjunaaaaa.github.io/nyuri/script/offline-message.js'></script>
-
-</body>
-</html>
+    if (!online) {
+      // Tampilkan pesan jika tidak terhubung
+      offlineMessage.style.display = 'block';
+      iframe.style.display = 'none';
+    }
+  </script>

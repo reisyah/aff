@@ -62,7 +62,7 @@ https://api.allorigins.win/raw?url=https://reisyah.github.io/player/jwplayer/mpd
 	https://reisyah.github.io/embed/index.html?file=https://stream.zhetv.eu.org/event/5
 	https://reisyah.github.io/embed/index.html?file=https://stream.zhetv.eu.org/lokal/sportstars4
 
-	https://reisyah.github.io/player/jwplayer/mp4.html?file=https://m2.ballnaja.com:8443/MNC_Sports3/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8wMi8yMDIzIDQ6Mzc6MzcgUE0maGFzaF92YWx1ZT11RHFVL3NZRjF6eXBSdnJwdndsV2hBPT0mdmFsaWRtaW51dGVzPTIw
+	https://reisyah.github.io/player/jwplayer/mp4.html?file=https://prod-ent-live-gm.jiocinema.com/bpk-tv/JV_SportsHD1_DIG_MOB/Fallback/index.m3u8
 	https://reisyah.github.io/embed/zhetv_c7.html
 	https://player.huminbird.cn/detail.html?v=102&mid=3945786&type=1&pid=7&isTips=1&isLogin=0&sbtcolor=4368fe&pfont=30px
 	-->	
@@ -97,6 +97,14 @@ https://api.allorigins.win/raw?url=https://reisyah.github.io/player/jwplayer/mpd
      </button>
 	 <!--
 	 -->
+	  <button type="button" class="css-button" onclick="jiotv1 ()">
+	<span class="css-button-icon">
+		<i class="fa fa-television"></i>
+	</span>
+	<span class="css-button-text">
+		<span>LSBTV 1</span>
+	</span>
+	  </button>
 	 
 	 <button type="button" class="css-button" onclick="spotv2vp()">
 	<span class="css-button-icon">
@@ -229,6 +237,12 @@ function nsspotv2() {
             frame.src = "go:jmotogp";
 	}
 
+
+
+function jiotv1() {
+            var frame = document.getElementById("vidio");
+            frame.src = "https://reisyah.github.io/player/jwplayer/mp4.html?file=https://prod-ent-live-gm.jiocinema.com/bpk-tv/JV_SportsHD1_DIG_MOB/Fallback/index.m3u8";
+}
 function spotv2vp() {
             var frame = document.getElementById("vidio");
             frame.src = "https://reisyah.github.io/tvsport/spotv2.html";
